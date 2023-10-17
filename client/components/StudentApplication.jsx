@@ -1,6 +1,6 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { FrontPage } from "./FrontPage.jsx";
-import { StudentsPage, NewStudent } from "./StudentsPage.jsx";
+import { DisplayStudents, NewStudent } from "./DisplayStudents.jsx";
 import { useState } from "react";
 
 function StudentRoutes() {
@@ -31,7 +31,7 @@ function StudentRoutes() {
       <Route path={"/"} element={<FrontPage />}></Route>
       <Route
         path={"/students"}
-        element={<StudentsPage students={students} />}
+        element={<DisplayStudents students={students} />}
       ></Route>
       <Route
         path={"/students/new"}
